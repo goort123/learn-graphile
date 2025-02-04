@@ -1,0 +1,8 @@
+mutation createTodo($description: String = "") {
+  createTodo(input: { todo: { description: $description } }) {
+    todo {
+      description
+      id
+    }
+  }
+}

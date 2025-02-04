@@ -1,0 +1,8 @@
+mutation deleteTodoById($id: Int = 10) {
+  deleteTodoById(input: { id: $id }) {
+    todo {
+      description
+      id
+    }
+  }
+}

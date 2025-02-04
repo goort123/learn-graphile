@@ -1,0 +1,9 @@
+mutation updateTodoById($id: Int = 3, $todoPatch: TodoPatch = {}) {
+  updateTodoById(input: { todoPatch: $todoPatch, id: $id }) {
+    todo {
+      description
+      completed
+      id
+    }
+  }
+}

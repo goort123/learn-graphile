@@ -1,0 +1,9 @@
+query getTodos {
+  allTodos {
+    nodes {
+      id
+      description
+      completed
+    }
+  }
+}
